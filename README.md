@@ -1,6 +1,9 @@
 # Kaggle-Real-or-Not-NLP-with-Disaster-Tweets
 
-此項目是Kaggle於 2019年12月20號所舉辦之NLP分類比賽。  
+此項目為Kaggle於2019年12月20號所舉辦之NLP分類比賽，目標為應用機器學習，讓模型能正確分辨人類寫的推特內容，是否是關於"真實的"災害。
+比賽網址與數據來源: https://www.kaggle.com/c/nlp-getting-started
+
+
 此github展示了EDA, Google Pretrained W2V應用,不同的LSTM(Multiple input LSTM, One Directional LSTM, BIdirectional LSTM)。      
 最後以3層 Birectional LSTM 得到了score: 0.81673, 排名373/ 1315。
 
