@@ -4,7 +4,12 @@
 比賽網址與數據來源: https://www.kaggle.com/c/nlp-getting-started
 
 
-此github展示了EDA, Text prepocessing, Google Pretrained W2V之應用,不同的LSTM(Multiple Inputs LSTM, One Directional LSTM, BIdirectional LSTM)。      
+此github展示:  
+1. EDA  
+2. Text prepocessing  
+3. Google Pretrained W2V之應用  
+4. 不同的LSTM(Multiple Inputs LSTM, One Directional LSTM, BIdirectional LSTM)  
+
 最後以3層 Birectional LSTM 得到了 F1 score: 0.81673, 排名373/ 1315。
 
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/Rank%20of%20Real%20or%20Not.png)
