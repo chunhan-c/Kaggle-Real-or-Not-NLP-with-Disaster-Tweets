@@ -10,7 +10,7 @@
 3. Google Pretrained W2V之應用  
 4. 不同的LSTM(Multiple Inputs LSTM, One Directional LSTM, BIdirectional LSTM)  
 
-最後以3層 Birectional LSTM 得到了 F1 score: 0.81673, 排名373/ 1315。
+最後以3層 Birectional LSTM 得到了 F1 score: 0.81673, 排名373/ 1315(前29%)。
 
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/Rank%20of%20Real%20or%20Not.png)
 
