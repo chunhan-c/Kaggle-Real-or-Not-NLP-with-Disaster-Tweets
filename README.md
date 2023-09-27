@@ -1,23 +1,24 @@
 # Kaggle-Real-or-Not-NLP-with-Disaster-Tweets
 
-此項目為Kaggle於2019年12月20號所舉辦之NLP分類比賽，目標為應用機器學習，讓模型能正確分辨人類寫的推特內容，是否是關於"真實的"災害。
-比賽網址與數據來源: https://www.kaggle.com/c/nlp-getting-started
 
+This project is from a Kaggle Natural Language Processing (NLP) classification competition held on December 20, 2019. The goal is to apply machine learning to enable a model to accurately classify Twitter content written by humans as either being related to 'real' disasters or not. You can find more details about the competition and the data source here.
 
-此github展示:  
-1. EDA  
-2. Text prepocessing  
-3. Google Pretrained W2V之應用  
-4. 不同的LSTM(Multiple Inputs LSTM, One Directional LSTM, BIdirectional LSTM)  
+GitHub Showcase:
 
-最後以3層 Birectional LSTM 得到了 F1 score: 0.81673, 排名373/ 1315(前29%)。
+EDA (Exploratory Data Analysis)
+Text Preprocessing
+Application of Google Pretrained Word2Vec (W2V)
+Different LSTM Models (Multiple Inputs LSTM, One Directional LSTM, Bidirectional LSTM)
+
+The final model, using a 3-layer Bidirectional LSTM, achieved an F1 score of 0.81673, ranking 373rd out of 1315 participants (in the top 29%).
 
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/Rank%20of%20Real%20or%20Not.png)
 
-以下為各模型之Accuracy, Val loss, Training Time:  
+Below are details for each model, including Accuracy, Validation Loss, and Training Time:
 
-Multiple Inputs(30 epochs):  
-Multiple Inputs 是指額外新增除了文字的variables, 例如: 文字字數。
+Multiple Inputs (30 epochs):
+
+Multiple Inputs refer to the inclusion of additional variables apart from text, such as the length of the text.
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/multiple_inputs_30e.png)
 
 LSTM (one layer):  
@@ -33,18 +34,15 @@ Birectional LSTM (three layer):
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/bi_3y_20e.png)  
   
   
-以下為各模型之 Kaggle Score(F1 score):
+Here are the Kaggle Scores (F1 score) for each model:
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/models_scores.png)  
   
   
-以下為各模型之 Training Time (單位: 秒):
+And here are the Training Times for each model (in seconds):
 ![image](https://github.com/chunhan-c/Kaggle-Real-or-Not-NLP-with-Disaster-Tweets/blob/master/trainings_times.png)
 
 
-總結:
-可以從上兩張圖看出三層的Birectional LSTM模型對於這個dataset來說 Kaggle F1最高，其次為單層的Birectional LSTM模型。
-但是也因為三層的Birectional LSTM模型相比之下較深，所需訓練時間為 3.0396秒/epoch，為單層Birectional LSTM訓練時間(0.684秒/epoch)的4倍以上。  
-考量到兩模型之F1 score相差僅小於0.001，時間成本相差4倍以上，且較深的模型通常訓練時間較久，時間限制高的情況下，單層Bidirectional LSTM會是較為合適之模型。
+In summary, the three-layer Bidirectional LSTM model achieved the highest Kaggle F1 score for this dataset. However, it also required significantly more training time compared to the one-layer Bidirectional LSTM model. Considering the marginal difference in F1 scores and the much longer training time of deeper models, the one-layer Bidirectional LSTM appears to be a more suitable choice, especially when time constraints are a factor.
 
 
 
